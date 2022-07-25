@@ -1,3 +1,4 @@
+from re import L
 from bs4 import BeautifulSoup
 import requests
 from city_names import cityDictionary as cD
@@ -38,4 +39,10 @@ def divarScraper(location, city):
     with open('ads.txt', 'w') as f:
         f.write(ads_info)
 
-divarScraper('', 'اصفهان')
+print('درحال حاضر فقط اطلاعات مرکز استانها موجود است')
+city = input('اسم شهر را به فارسی وارد کنید: ')
+location = input('منطقه مورد نظر را به فارسی وارد کنید: ')
+try:
+    divarScraper(location, city)
+except KeyError:
+    print('شهر وارد شده در پایگاه داده وجود ندارد')
