@@ -1,8 +1,9 @@
 from bs4 import BeautifulSoup
 import requests
+from city_names import cityDictionary as cD
 
 def divarScraper(location, city):
-    divar = requests.get(f'https://divar.ir/s/{city.lower()}').text
+    divar = requests.get(f'https://divar.ir/s/{cD(city)}').text
     soup = BeautifulSoup(divar, 'lxml')
     ads = soup.find_all('div', class_="post-card-item")
     ads_info = ''
@@ -37,4 +38,4 @@ def divarScraper(location, city):
     with open('ads.txt', 'w') as f:
         f.write(ads_info)
 
-divarScraper('', 'mashhad')
+divarScraper('', 'اصفهان')
