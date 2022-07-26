@@ -32,4 +32,6 @@ cities = {
     'یزد': 'yazd'
 }
 def cityDictionary(city):
-    return cities[city]
+    if city in cities:
+        return cities[city]
+    return None
