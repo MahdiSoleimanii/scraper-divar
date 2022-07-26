@@ -1,4 +1,5 @@
 contents.html
 *.txt
+resources/
 __pycache__/
 .DS_Store
