@@ -1,10 +1,11 @@
-from re import L
 from bs4 import BeautifulSoup
 import requests
 from city_names import cityDictionary as cD
 
 def divarScraper(location, city):
     divar = requests.get(f'https://divar.ir/s/{cD(city)}').text
+    with open('contents.html', 'w') as f:
+        f.write(divar)
     soup = BeautifulSoup(divar, 'lxml')
     ads = soup.find_all('div', class_="post-card-item")
     ads_info = ''
