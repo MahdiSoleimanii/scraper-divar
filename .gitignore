@@ -1,4 +1,4 @@
 contents.html
-ads.txt
+*.txt
 __pycache__/
 .DS_Store
