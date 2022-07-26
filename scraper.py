@@ -41,8 +41,8 @@ def divarScraper(location, city):
 
 print('درحال حاضر فقط اطلاعات مرکز استانها موجود است')
 city = input('اسم شهر را به فارسی وارد کنید: ')
-location = input('منطقه مورد نظر را به فارسی وارد کنید: ')
-try:
+if cD(city):
+    location = input('منطقه مورد نظر را به فارسی وارد کنید: ')
     divarScraper(location, city)
-except KeyError:
+else:
     print('شهر وارد شده در پایگاه داده وجود ندارد')
