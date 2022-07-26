@@ -1,5 +1,7 @@
-<h1 align="center"><img src='resources/Banner.png' style="border-radius: 100px;">Divar Scraper</h1>
-<p align="center" style="font-size: 18px">A Program to fetch latest ads from each city</p>
+<h1 align="center">
+    <br>
+    <img src='resources/Banner.png' style="border-radius: 100px;">Divar Scraper</h1>
+<h4 align="center" style="font-size: 18px">A Program to fetch latest ads from each city.</h4>
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/MahdiSoleimanii/scraper-divar)
 
