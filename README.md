@@ -23,6 +23,9 @@ $ git clone https://github.com/MahdiSoleimanii/scraper-divar
 # Navigate to the directory
 $ cd scraper-divar
 
+# Install requirements
+$ pip install -r requirements.txt
+
 # run the main.py file
 $ python main.py
 
