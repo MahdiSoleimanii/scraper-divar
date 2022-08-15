@@ -6,6 +6,7 @@
 <h4 align="center">A Program to fetch latest ads from each city.</h4>
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/MahdiSoleimanii/scraper-divar)
+![GitHub](https://img.shields.io/github/license/MahdiSoleimanii/scraper-divar)
 
 ## Required Packages
 Use the package manager [pip](https://pypi.org/project/pip/) to install these packages
