@@ -35,3 +35,6 @@ $ python main.py
 ```
 ## Terms of Usage
 The ```robots.txt``` file from [divar](https://divar.ir/robots.txt) is included in the repository; as there are no restrictions upon scraping.
+
+## Lincese
+<a href="https://github.com/MahdiSoleimanii/scraper-divar/blob/master/LICENSE">MIT</a>
